@@ -4,6 +4,7 @@
 
 - 🌱 We are making work fair system.
 - 📫 Contact. 2091126@hansung.ac.kr
+**ShinHyun-soo/ShinHyun-soo** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
 <!--
 **ShinHyun-soo/ShinHyun-soo** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
