@@ -1,0 +1,30 @@
+#result {
+    width: 30%;
+    margin: 0;
+    float: left;
+}
+
+table tr td {
+    padding: 3px;
+}
+
+table tr #when {
+    width : 110px;
+    text-align: center;
+}
+
+table tr #p1 {
+    width : 90px;
+    text-align: center;
+}
+
+table tr #p2 {
+    width : 90px;
+    text-align: center;
+}
+
+textarea {
+    width : 15%;
+    resize: none;
+    font-size: 15px;
+}
