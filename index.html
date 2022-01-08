@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <title>근무 공정 시스템</title>
     <link rel="stylesheet" href="index.css">
+    <script>
+        document.getElementById('date').valueAsDate = new Date();
+    </script>
 </head>
 <body>
     <header class="header">
@@ -11,119 +14,132 @@
     </header>
     <main>
         <div id = "result">
-            <table id = "cctv" border="1" cellspacing=0>
-                <th colspan = "3">경계 근무 명령서 (CCTV)</th>
-                <tr class="time1">
-                    <td id="when">08:00 ~ 10:00</td>
-                    <td id="p1"></td>
-                    <td id="p2"></td>
-                </tr>
-                <tr class="time2">
-                    <td id="when">10:00 ~ 12:00</td>
-                    <td id="p1"></td>
-                    <td id="p2"></td>
-                </tr>
-                <tr class="time3">
-                    <td id="when">12:00 ~ 14:00</td>
-                    <td id="p1"></td>
-                    <td id="p2"></td>
-                </tr>
-                <tr class="time4">
-                    <td id="when">12:00 ~ 14:00</td>
-                    <td id="p1"></td>
-                    <td id="p2"></td>
-                </tr>
-                <tr class="time5">
-                    <td id="when">14:00 ~ 16:00</td>
-                    <td id="p1"></td>
-                    <td id="p2"></td>
-                </tr>
-                <tr class="time6">
-                    <td id="when">16:00 ~ 18:00</td>
-                    <td id="p1"></td>
-                    <td id="p2"></td>
-                </tr>
-                <tr class="time7">
-                    <td id="when">18:00 ~ 19:30</td>
-                    <td id="p1"></td>
-                    <td id="p2"></td>
-                </tr>
-                <tr class="time8">
-                    <td id="when">19:30 ~ 21:00</td>
-                    <td id="p1"></td>
-                    <td id="p2"></td>
-                </tr>
-                <tr class="time9">
-                    <td id="when">21:00 ~ 22:30</td>
-                    <td id="p1"></td>
-                    <td id="p2"></td>
-                </tr>
-                <tr class="time10">
+            <label for="date">날짜 선택</label>
+            <input type="date" id="date">
+            <button>불러오기</button>
+            <table id = "vigil" border="1" cellspacing=0>
+                <th colspan = "3">경계 근무 명령서 (불침번)</th>
+                <tr id="gtime1" class = "night">
                     <td id="when">22:30 ~ 00:30</td>
                     <td id="p1"></td>
                     <td id="p2"></td>
                 </tr>
-                <tr class="time11">
+                <tr id="gtime2" class = "night">
                     <td id="when">00:30 ~ 02:00</td>
                     <td id="p1"></td>
                     <td id="p2"></td>
                 </tr>
-                <tr class="time12">
+                <tr id="gtime3" class = "night">
                     <td id="when">02:00 ~ 03:30</td>
                     <td id="p1"></td>
                     <td id="p2"></td>
                 </tr>
-                <tr class="time13">
+                <tr id="gtime4" class = "night">
                     <td id="when">03:30 ~ 05:00</td>
                     <td id="p1"></td>
                     <td id="p2"></td>
                 </tr>
-                <tr class="time14">
+                <tr id="gtime5" class = "night">
                     <td id="when">05:00 ~ 06:30</td>
-                    <td id="p1"></td>
-                    <td id="p2"></td>
-                </tr>
-                <tr class="time15">
-                    <td id="when">06:30 ~ 08:00</td>
                     <td id="p1"></td>
                     <td id="p2"></td>
                 </tr>
             </table>
 
-            <table id = "vigil" border="1" cellspacing=0>
-                <th colspan = "3">경계 근무 명령서 (불침번)</th>
-                <tr class="time1">
+            <table id = "cctv" border="1" cellspacing=0>
+                <th colspan = "3">경계 근무 명령서 (CCTV)</th>
+                <tr id="ctime1" class = "morning">
+                    <td id="when">08:00 ~ 10:00</td>
+                    <td id="p1"></td>
+                    <td id="p2"></td>
+                </tr>
+                <tr id="ctime2" class = "morning">
+                    <td id="when">10:00 ~ 12:00</td>
+                    <td id="p1"></td>
+                    <td id="p2"></td>
+                </tr>
+                <tr id="ctime3" class = "morning">
+                    <td id="when">12:00 ~ 14:00</td>
+                    <td id="p1"></td>
+                    <td id="p2"></td>
+                </tr>
+                <tr id="ctime4" class = "morning">
+                    <td id="when">14:00 ~ 16:00</td>
+                    <td id="p1"></td>
+                    <td id="p2"></td>
+                </tr>
+                <tr id="ctime5" class = "morning">
+                    <td id="when">16:00 ~ 18:00</td>
+                    <td id="p1"></td>
+                    <td id="p2"></td>
+                </tr>
+                <tr id="ctime6" class = "evening">
+                    <td id="when">18:00 ~ 19:30</td>
+                    <td id="p1"></td>
+                    <td id="p2"></td>
+                </tr>
+                <tr id="ctime7" class = "evening">
+                    <td id="when">19:30 ~ 21:00</td>
+                    <td id="p1"></td>
+                    <td id="p2"></td>
+                </tr>
+                <tr id="ctime8" class = "evening">
+                    <td id="when">21:00 ~ 22:30</td>
+                    <td id="p1"></td>
+                    <td id="p2"></td>
+                </tr>
+                <tr id="ctime9" class = "night">
                     <td id="when">22:30 ~ 00:30</td>
                     <td id="p1"></td>
                     <td id="p2"></td>
                 </tr>
-                <tr class="time2">
+                <tr id="ctime10" class = "night">
                     <td id="when">00:30 ~ 02:00</td>
                     <td id="p1"></td>
                     <td id="p2"></td>
                 </tr>
-                <tr class="time3">
+                <tr id="ctime11" class = "night">
                     <td id="when">02:00 ~ 03:30</td>
                     <td id="p1"></td>
                     <td id="p2"></td>
                 </tr>
-                <tr class="time4">
+                <tr id="ctime12" class = "night">
                     <td id="when">03:30 ~ 05:00</td>
                     <td id="p1"></td>
                     <td id="p2"></td>
                 </tr>
-                <tr class="time5">
+                <tr id="ctime13" class = "night">
                     <td id="when">05:00 ~ 06:30</td>
                     <td id="p1"></td>
                     <td id="p2"></td>
                 </tr>
-            
+                <tr id="ctime14" class = "morning">
+                    <td id="when">06:30 ~ 08:00</td>
+                    <td id="p1"></td>
+                    <td id="p2"></td>
+                </tr>
             </table>
         </div>
         <div id = "participant">
             <h4>근무 순서 작성</h4>
             <form name = "work_list">
-                <textarea name = "list" rows=20></textarea>
+                <label for="name">관등성명 입력</label>
+                <input type="text" id="name" autocomplete="off">
+                <button id="participant_add">추가</button>
+                <hr>
+                <ul id = "participant_list">
+                    <li>일병 서관렬</li>
+                    <li>약간 이런느낌?</li>
+                    <li>클릭하면 우측에 정보 떠서</li>
+                    <li>열외내용 설정하고 저장하면 될 듯?</li>
+                </ul>
+            </form>
+        </div>
+        <div id="calculator">
+            <form>
+                <button id="calculator">계산</button>
+                <button id="reset">지우기</button>
+                <button id="print">출력</button>
             </form>
         </div>
     </main>

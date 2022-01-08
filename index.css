@@ -2,9 +2,9 @@
     width: 30%;
     float: left;
 	 text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 #participant{
@@ -20,14 +20,21 @@ table tr #when {
     text-align: center;
 }
 
-table tr #p1 {
+table tr #p1, table tr #p2 {
     width : 90px;
     text-align: center;
 }
 
-table tr #p2 {
-    width : 90px;
-    text-align: center;
+table .morning #when {
+    background-color: rgb(255, 255, 161);
+}
+
+table .evening #when {
+    background-color: rgb(0, 255, 0);
+}
+
+table .night #when {
+    background-color: rgb(223, 223, 223);
 }
 
 textarea {
@@ -36,13 +43,29 @@ textarea {
     font-size: 15px;
 }
 header{
-	margin-top: 90px;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  font-weight: 600;
+    margin-top: 90px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: 600;
 }
+
+input[type="text"] {
+    width:150px;
+    height:30px;
+    padding: 0px 3px;
+    border: 1px black solid;
+    border-radius: 5px;
+}
+
+#participant_add {
+    width:90px;
+    height:30px;
+    background:rgb(47, 24, 255);
+    color:#fff;
+    border:none;
+  }
 
 header-title {
 	 margin-bottom: 40px;
