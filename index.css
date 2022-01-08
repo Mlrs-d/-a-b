@@ -1,11 +1,14 @@
 #result {
     width: 30%;
-    margin: 90px;
     float: left;
-text-align: center;
+	 text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+#participant{
+	 margin: 90px;
 }
 
 table tr td {
