@@ -37,6 +37,10 @@ table .night #when {
     background-color: rgb(223, 223, 223);
 }
 
+table {
+	margin-right: 20px;
+}
+
 textarea {
     width : 15%;
     resize: none;
@@ -75,4 +79,8 @@ header-title {
 
 load {
 	display:inline;
+}
+
+#participant form #participant_list {
+	list-style:none;
 }

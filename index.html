@@ -4,21 +4,18 @@
     <meta charset="UTF-8">
     <title>근무 공정 시스템</title>
     <link rel="stylesheet" href="index.css">
-    <script>
-        document.getElementById('date').valueAsDate = new Date();
-    </script>
+    <script src="index.js"></script>
 </head>
 <body>
     <header class="header">
         <h2 class="header-title">근무 공정 시스템</h2>
     </header>
     <main>
-		
 		<input type="date" id="date">
         <button id = "load">불러오기</button>
+		<input type="checkbox" value="cctv">CCTV 근무
+		<input type="checkbox" value="brunch">브런치데이
 	
-		
-		
         <div id = "result">
             
             <table id = "vigil" border="1" cellspacing=0>
@@ -129,21 +126,18 @@
             <form name = "work_list">
                 <label for="name">관등성명 입력</label>
                 <input type="text" id="name" autocomplete="off">
-                <button id="participant_add">추가</button>
+                <button id="participant_add" onclick="addParticipant(); return false;">추가</button>
+				
                 <hr>
                 <ul id = "participant_list">
-                    <li>일병 서관렬</li>
-                    <li>약간 이런느낌?</li>
-                    <li>클릭하면 우측에 정보 떠서</li>
-                    <li>열외내용 설정하고 저장하면 될 듯?</li>
                 </ul>
             </form>
         </div>
         <div id="calculator">
             <form>
-                <button id="calculator">계산</button>
-                <button id="reset">지우기</button>
-                <button id="print">출력</button>
+                <button id="calculator" onclick="return false;">계산</button>
+                <button id="reset" onclick="return false;">지우기</button>
+                <button id="print" onclick="return false;">출력</button>
             </form>
         </div>
     </main>
