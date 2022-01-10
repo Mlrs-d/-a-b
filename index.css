@@ -7,10 +7,6 @@
     align-items: center;
 }
 
-#participant{
-	 margin: 45px;
-}
-
 table tr td {
     padding: 3px;
 }
@@ -83,4 +79,13 @@ load {
 
 #participant form #participant_list {
 	list-style:none;
+}
+
+#pc {
+	float: left;
+	width: 600px;
+}
+
+#information {
+	float: left;
 }
