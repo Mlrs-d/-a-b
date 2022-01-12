@@ -1,0 +1,60 @@
+body{
+	background-color: rgb(229,229,229);
+}
+
+aside {
+	width: 250px;
+	position: fixed;
+	height: 100%;
+	margin: 0px;
+	background: white;
+}
+
+header {
+	margin-left: 250px;
+	display: block;
+	height: 50px;
+	background-color: rgb(38, 93, 245);
+	border: 4px solid rgb(24, 160, 251);
+	color: white;
+	text-height: 50px;
+}
+
+section {
+	margin: 15px 0px 2px 260px;
+	height: 800px;
+	background: white;
+}
+
+.burger {
+	margin-top: 7px;
+	height: 50px;
+	float: left;
+	cursor: pointer;
+}
+
+#title {
+	float: left;
+	height: 50px;
+	line-height: 50px;
+}
+
+.burger div {
+	background-color: white;
+	width: 45px;
+	height: 5px;
+	margin: 5px;
+	transition: all 0.5s;
+}
+
+.toggle .line1 {
+	transform: rotate(-45deg) translate(-8px, 6px);
+}
+
+.toggle .line3 {
+	transform: rotate(45deg) translate(-8px, -6px);
+}
+
+.toggle .line2 {
+	opacity: 0;
+}
