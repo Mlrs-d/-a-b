@@ -4,15 +4,20 @@
 		#main-title {
 			
 			color:#000000;
-			font-size:50pt;
-			margin-top:7%;
+			font-size:30pt;
+			margin-top:23%;
 			
 		}
 		#login{
-			width: 475px;
-			height: 400px;
-			margin:auto; 
-			background-color: white;
+			  position: absolute;
+			  top: 50%;
+			  left: 50%;
+			  transform: translate(-50%,-50%);
+			  width: 500px;
+			  height: 380px;
+		      margin:auto; 
+			  background-color: white;
+			  box-shadow: 5px 5px 5px gray;
 		}
 	</style>
 </HEAD>
@@ -25,7 +30,7 @@
 			<tr>
 			<td>
 				<div id="main-title">
-					LOGO NAME
+					LOGIN
 				</div>
 				</td>
 			</tr>
@@ -33,20 +38,21 @@
 		<table align="center" height="40" width="430" border="0" style="border:solid 4px #00ff0000; margin-top:4%">  
        	 	 <tr>
           		<td>
-			  		<input type="text" name="id" value="" style="height:40px; width:430px;">
+			  		<input type="text" name="id" value="" style="height:40px; width:400px;" placeholder="아이디">
 			 	</td>
         	 </tr> 
   		</table>
 
  	<table align="center" height="40" width="430" border="0" style="border:solid 4px #00ff0000; margin-top:1%"> 
           <tr>
-              <td><input type="password" name="pw" value="" style="height:40px; width:430px"></td>
+              <td><input type="password" name="pw" value="" style="height:40px; width:400px" placeholder="비밀번호">
+			  </td>
          </tr> 
  	</table>
 	
-	<table align="center" height="40" style="margin-top:1%">
+	<table align="center" height="80" style="margin-top:4%">
        <tr>
-             <td><input type="button" name="login" value="로그인" style="height:50px; width:430px;  background-color:#0000FF; color:white; font-size:16px; border:solid 1px #050099; "></td>
+             <td><input type="button" name="login" value="로그인" style="height:60px; width:415px;  background-color:#0000FF; color:white; font-size:16px; border:solid 1px #050099; "></td>
       </tr> 
  	</table>
 	</div>
