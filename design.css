@@ -1,11 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap');
+
 body{
 	background-color: rgb(229,229,229);
+	height: 100%
 }
 
-aside {
+.left {
 	width: 250px;
 	position: fixed;
-	height: 100%;
+	height: 95%;
 	margin: 0px;
 	background: white;
 }
@@ -20,10 +23,17 @@ header {
 	text-height: 50px;
 }
 
+#main {
+	margin: 0px 0px 0px 250px;
+	padding: 7px 15px 7px 15px;
+	height: 90vh;
+	background: rgb(233,242,246);
+}
+
 section {
-	margin: 15px 0px 2px 260px;
-	height: 800px;
+	margin: 20px;
 	background: white;
+	height: 90%
 }
 
 .burger {
@@ -36,6 +46,7 @@ section {
 #title {
 	float: left;
 	height: 50px;
+	padding-left: 20px;
 	line-height: 50px;
 }
 
@@ -46,15 +57,54 @@ section {
 	margin: 5px;
 	transition: all 0.5s;
 }
-
 .toggle .line1 {
 	transform: rotate(-45deg) translate(-8px, 6px);
 }
-
 .toggle .line3 {
 	transform: rotate(45deg) translate(-8px, -6px);
 }
-
 .toggle .line2 {
 	opacity: 0;
+}
+
+.side {
+	width: 0px;
+	margin-top: 59px;
+	height: 100%;
+	transition: all 0.5s;
+	opacity: 0;
+}
+.toggles {
+	width: 250px;
+	opacity: 1;
+}
+
+
+#logo {
+	height: 50px;
+	line-height: 50px;
+	border-bottom: 4px solid rgb(229,229,229);
+	margin-top: 2px;
+	font-family: 'Do Hyeon', sans-serif;
+	text-align: center;
+	font-size: 21px;
+}
+
+#logo > p {
+	height: 50px;
+	line-height: 50px;
+	margin: 0px;
+}
+
+
+ul {
+	list-style:none;
+	padding-left: 10px;
+	font-weight: 600;
+}
+
+ul li{
+	padding-left: 40px;
+	color: rgb(123,123,123);
+	margin-bottom: 5px;
 }

@@ -6,6 +6,9 @@
 - 🌱 **prototype :** https://work-fair.run.goorm.io/-a-b/
 - 📫 **Contact.** 2091126@hansung.ac.kr
 
+![image](https://user-images.githubusercontent.com/69250097/149061594-02148566-fd03-4e08-a0c0-0c506527fc69.png)
+![image](https://user-images.githubusercontent.com/69250097/149061811-4658057a-676b-4f38-bec9-b3f3132c50f6.png)
+
 
 <!--
 **ShinHyun-soo/ShinHyun-soo** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
