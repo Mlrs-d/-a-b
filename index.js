@@ -85,3 +85,16 @@ function exportExcel(){
     // step 5. 엑셀 파일 내보내기 
     saveAs(new Blob([s2ab(wbout)],{type:"application/octet-stream"}), excelHandler.getExcelFileName());
 }
+var initBody;
+function beforePrint(){
+	boxes = document.body.innerHTML;
+	document.body.innerHTML = result.innerHTML;
+}
+function afterPrint() {
+	document.body.innerHTML = results;
+}
+function printArea() {
+	window.print();
+}
+window.onbeforeprint = beforePrint;
+window.onafterprint = afterPrint;
