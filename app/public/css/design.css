@@ -14,20 +14,25 @@ body{
 }
 
 header {
-	margin-left: 250px;
+	margin-left: 0px;
 	display: block;
 	height: 50px;
 	background-color: rgb(38, 93, 245);
 	border: 4px solid rgb(24, 160, 251);
 	color: white;
 	text-height: 50px;
+	transition: all 0.5s;
 }
 
 #main {
-	margin: 0px 0px 0px 250px;
 	padding: 7px 15px 7px 15px;
 	height: 90vh;
 	background: rgb(233,242,246);
+	transition: all 0.5s;
+}
+
+.h_toggle {
+	margin-left: 250px;
 }
 
 section {
@@ -69,7 +74,6 @@ section {
 
 .side {
 	width: 0px;
-	margin-top: 59px;
 	height: 100%;
 	transition: all 0.5s;
 	opacity: 0;
@@ -107,4 +111,10 @@ ul li{
 	padding-left: 40px;
 	color: rgb(123,123,123);
 	margin-bottom: 5px;
+	transition: all 0.5s;
+}
+
+ul li:hover{
+	color:black;
+	cursor: pointer;
 }

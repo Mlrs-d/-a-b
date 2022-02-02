@@ -1,12 +1,14 @@
 const burgerbutton=() => {
 	const burger = document.querySelector(".burger");
+	const side = document.querySelector(".side");
+	const header = document.querySelector("header");
+	const main = document.querySelector("#main");
+	
 	burger.addEventListener('click', () => {
 		burger.classList.toggle('toggle');
-	});
-	
-	const side = document.querySelector(".side");
-	burger.addEventListener('click', () => {
 		side.classList.toggle('toggles');
+		header.classList.toggle('h_toggle');
+		main.classList.toggle('h_toggle');
 	});
 }
 
