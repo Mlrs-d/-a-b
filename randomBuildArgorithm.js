@@ -49,20 +49,20 @@ const work = {
 	n4: null,
 	n5: null,
 	
-	n6: new Array(),
-	n7: new Array(),
-	n8: new Array(),
-	n9: new Array(),
+	n6: new Array(2),
+	n7: new Array(2),
+	n8: new Array(2),
+	n9: new Array(2),
 	
-	w1: new Array(),
-	w2: new Array(),
-	w3: new Array(),
-	w4: new Array(),
-	w5: new Array(),
-	w6: new Array(),
-	w7: new Array(),
-	w8: new Array(),
-	w9: new Array()
+	w1: new Array(2),
+	w2: new Array(2),
+	w3: new Array(2),
+	w4: new Array(2),
+	w5: new Array(2),
+	w6: new Array(2),
+	w7: new Array(2),
+	w8: new Array(2),
+	w9: new Array(2)
 }
 
 var i = 1;  //priority, 아직 반영X
@@ -81,16 +81,19 @@ while (repeat <= 5) {
 	}
 	
 	var temp_worker = randomValueFromArray(available_night_player);
+	
+	//우선순위
 	if (outsider_player.indexOf(temp_worker) >= 0 || temp_worker.priority != i) {
 		outsider_player.push(temp_worker);
 		continue;
 	}
+	
 	work["n"+rand_1_5] = temp_worker;
 	
 	for(let i = 0; i < available_night_player.length; i++) {
   		if(available_night_player[i] === temp_worker) {
-    		available_night_player.splice(i, 1);
-    		i--;
+			available_night_player.splice(i, 1);
+			i--;
   		}
 	}
 	
@@ -132,6 +135,15 @@ while (repeat <= 8) {
 		continue;
 	}
 	
+	//이웃 시간 배정 x
+	if (rand_1_5 >= 7 && (work['n'+(rand_1_5-1)][0] == temp_worker || work['n'+(rand_1_5-1)][1] == temp_worker)) {
+		continue;
+	}
+	
+	if (rand_1_5 <= 8 && (work['n'+(rand_1_5+1)][0] == temp_worker || work['n'+(rand_1_5+1)][1] == temp_worker)) {
+		continue;
+	}
+	
 	if (work["n"+rand_1_5][0] != null) {
 		work["n"+rand_1_5][1] = temp_worker;
 	} else {
@@ -140,8 +152,8 @@ while (repeat <= 8) {
 	
 	for(let i = 0; i < available_night_player.length; i++) {
   		if(available_night_player[i] === temp_worker) {
-    		available_night_player.splice(i, 1);
-    		i--;
+			available_night_player.splice(i, 1);
+			i--;
   		}
 	}
 	
@@ -171,6 +183,16 @@ while (repeat <= 18) {
 	}
 	
 	var temp_worker = randomValueFromArray(available_weekly_player);
+	
+	//이웃 시간 배정 x
+	if (rand_1_5 >= 2 && (work['n'+(rand_1_5-1)][0] == temp_worker || work['n'+(rand_1_5-1)][1] == temp_worker)) {
+		continue;
+	}
+	
+	if (rand_1_5 <= 8 && (work['n'+(rand_1_5+1)][0] == temp_worker || work['n'+(rand_1_5+1)][1] == temp_worker)) {
+		continue;
+	}
+	
 	if (work["w"+rand_1_5][0] == temp_worker) {
 		continue;
 	}
@@ -183,8 +205,8 @@ while (repeat <= 18) {
 	
 	for(let i = 0; i < available_weekly_player.length; i++) {
   		if(available_weekly_player[i] === temp_worker) {
-    		available_weekly_player.splice(i, 1);
-    		i--;
+			available_weekly_player.splice(i, 1);
+			i--;
   		}
 	}
 	work["w"+rand_1_5].sort();
